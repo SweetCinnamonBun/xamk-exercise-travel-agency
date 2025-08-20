@@ -4,8 +4,16 @@ html {
 
 body {
   min-height: 100vh;
+  display: grid;
+  place-items: center;  
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
+  width: 1120px;
+  border: 1px solid grey;
+
 }
 
 header {
@@ -40,13 +48,15 @@ nav {
 
 .nav-ul > * {
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 main {
   flex: 1;
   display: grid;
   grid-template-columns: max-content 1.4fr 1fr;
-  margin-top: 2rem;
+  margin-top: 3.4rem;
+  margin-bottom: 10rem;
 }
 
 aside {
@@ -64,7 +74,7 @@ aside ul li {
 
 .description {
   margin-left: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding-right: 4rem;
   line-height: 2.2rem;
 }
@@ -142,25 +152,3 @@ footer {
 }
 
 
-@media (min-width: 1500px) {
-    main {
-       padding-inline: 5rem;
-    }
-}
-
-@media (min-width: 1750px) {
-    main {
-       padding-inline: 10rem;
-    }
-
-}
-
-@media (min-width: 1750px) {
-    main {
-       padding-inline: 30rem;
-    }
-
-    nav {
-        padding-inline: 30rem;
-    }
-}
